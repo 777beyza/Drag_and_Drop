@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.empty {
+    width: 150px;
+    height: 150px;
+    border: solid 3px #333 ;  /* !---yan yana sıralar boşluksuz---! */
+    margin: 10px;  /* boşluk koyar */
+    background-color: aliceblue;
+}
+
+.fill {
+    background-image: url('https://source.unsplash.com/random/150x150');
+    width: 144px;
+    height: 144px;
+    cursor: pointer;
+    /* css cursor özelliği mouse işaretçisinin stilini belirlemek için kullanılır.
+     Örneğin buton üzerine geldiğinde bir el işaretini alması gibi. 
+    Varsayılan değeri auto değeridir. */
+} 
+
+.hold {
+    border: solid 5px olivedrab; /* çerçeve gibi bi şey koyar  */
+}
+
+.hover {
+    background-color: azure;
+    border-style: dashed;
+    border-color: antiquewhite;
+}
+
+@media(max-width: 800px){
+    body{
+        flex-direction: column;
+    }
+}
